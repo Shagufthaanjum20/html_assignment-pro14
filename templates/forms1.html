@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms1</title>
+</head>
+
+<body>
+    <center>
+        <h3>
+            <form>
+                <div>
+                    <label for="name">User name</label>
+                    <input type="text" placeholder="enter your name" id="name">
+                </div>
+                <br>
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="email" placeholder="abc@gmail.com" id="mail">
+                </div>
+                <br>
+                <div>
+                    <label for="password">New password</label>
+                    <input type="password" placeholder="enter strong password" id="password">
+                </div>
+                <br>
+                <div>
+                    <label for="number">Mobile number</label>
+                    <input type="number" placeholder="+91-00000000" id="number">
+                </div>
+                <br>
+                <div>
+                    <label for="DOB">Date of birth</label>
+                    <input type="datetime-local" id="DOB">
+                </div>
+                <br>
+                <div>
+                    <label for="DOB">Date of birth</label>
+                    <input type="date time" id="DOB">
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="">male
+                    <input type="radio" name="gender" id="">Female
+                    <input type="radio" name="gender" id="">others
+                </div>
+                <br>
+                <div>
+                    <label for="skills">skills</label>
+                    <input type="checkbox" name="skills" id="">python
+                    <input type="checkbox" name="skills" id="">mern
+                    <input type="checkbox" name="skills" id="">java
+                </div>
+                <br>
+                <div>
+                    <label>file upload</label>
+                    <input type="file" name="" id="">
+                </div>
+                <br>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="range" name="" id="">
+                </div>
+                <br>
+                <input type="submit" id="login">
+                <input type="reset" id="logout">
+            </form>
+
+        </h3>
+        <h1><a href="{% url 'forms2' %}">click here to go forms2 page</a></h1>
+    </center>
+</body>
+
+</html>

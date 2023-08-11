@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <a href="{% url 'table2' %}">click here to go table2 page</a>
+        <h1>
+            <table border="1">
+                <tr>
+                    <th>product ID</th>
+                    <th>product name</th>
+                    <th>product quality</th>
+                    <th>product quantity</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>wheat</td>
+                    <td>good</td>
+                    <td>200 bags</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>rice</td>
+                    <td>good</td>
+                    <td>250 bags</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>sugar</td>
+                    <td>good</td>
+                    <td>200 bags</td>
+                </tr>
+
+            </table>
+            
+            <a href="{% url 'table2' %}">click here to go table2 page</a>
+        </h1>
+    </center>
+
+</body>
+
+</html>

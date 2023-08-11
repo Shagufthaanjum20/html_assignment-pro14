@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>table5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>
+            <table border="1">
+                <tr>
+                    <th colspan="2">HTML Table</th>
+
+                </tr>
+
+                <tr>
+                    <td>call1</td>
+                    <td>cell2 <table border="1">
+                    </td>
+                    <th colspan="2">Nested HTML Table</th>
+                <tr>
+                    <td>cell2.1</td>
+                    <td>cell2.2</td>
+                </tr>
+                <tr>
+                    <td>cell2.3</td>
+                    <td>cell2.4</td>
+                </tr>
+                </tr>
+            </table>
+            </td>
+
+            </tr>
+            </table>
+            
+            <a href="{% url 'table6' %}">click here to go table6 page</a>
+
+        </h1>
+    </center>
+</body>
+
+</html>

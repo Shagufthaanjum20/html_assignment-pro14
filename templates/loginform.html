@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log-in form</title>
+    <link rel="stylesheet"
+    href="animate__heartBeat">
+    <style>
+       body{
+           margin: 200px,0,0,375px;
+       }
+       fieldset{
+           background: linear-gradient(45deg,lightblue,lightgreen);
+           text-align: center;
+           width: fit-content;
+           font-weight: 900;
+           font-style:italic;
+       }
+       legend{
+           text-align: left;
+       }
+    </style>
+</head>
+<body>
+    <form class="animate__bounce">
+        <fieldset>
+            <legend>login</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name" user-id></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="user-id" id="name">
+                    </td>
+                    <tr>
+                        <td>
+                            <label for="password">password</label>
+                        </td>
+                        <td>
+                            <input type="text" id="password"
+                            placeholder="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="login">
+                            <input type="reset" value="reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="">forget password----?</a>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <h1><a href="{% url 'signupform' %}">click here to go signupform page</a></h1>
+</body>
+</html>

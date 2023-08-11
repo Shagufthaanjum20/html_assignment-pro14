@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divtag3</title>
+    <style>
+
+        #outer {
+            width: 1000px;
+            height: 790px;
+            border: 2px solid black;
+            background-image: url(https://img.freepik.com/free-photo/close-up-wet-female-hands-rain_335224-884.jpg?w=2000);
+            background-size: cover;
+            margin: auto;
+            display: flex;
+        }
+
+        .div1 {
+            width: 100px;
+            height: 75px;
+            border: 2px solid black;
+        }
+
+        .a {
+            margin-top: 0px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, aqua,lime);
+
+        }
+
+        .b {
+            margin-top: 77px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, lightblue, lightgreen);
+        }
+
+        .c {
+            margin-top: 154px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, orange, lightpink);
+        }
+
+        .d {
+            margin-top: 231px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, yellow, red);
+        }
+
+        .e {
+            margin-top: 308px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, aqua, magenta);
+        }
+
+        .f {
+            margin-top: 385px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, violet, lavender);
+        }
+
+        .g {
+            margin-top: 308px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, blueviolet, indigo);
+        }
+
+        .h {
+            margin-top: 231px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, lime, cyan);
+        }
+
+        .i {
+            margin-top: 154px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, pink, magenta);
+        }
+
+        .j {
+            margin-top: 77px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, green, yellow);
+        }
+
+        .k {
+            margin-top: 0px;
+            border-top-color: red;
+            border-right-color: yellow;
+            border-bottom-color: green;
+            border-left-color: blueviolet;
+            background: linear-gradient(120deg, aqua, lime);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="div1 a"></div>
+        <div class="div1 b"></div>
+        <div class="div1 c"></div>
+        <div class="div1 d"></div>
+        <div class="div1 e"></div>
+        <div class="div1 f"></div>
+        <div class="div1 g"></div>
+        <div class="div1 h"></div>
+        <div class="div1 i"></div>
+        <div class="div1 j"></div>
+        <div class="div1 k"></div>
+    </div>
+    <h1><a href="{% url 'forms1' %}">click here to go forms1 page</a></h1>
+</body>
+
+</html>

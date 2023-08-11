@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms3</title>
+    <style>
+        body {
+            background-image: url(https://4kwallpapers.com/images/wallpapers/tea-estate-hill-station-greenery-western-ghats-pattern-3840x2160-4064.jpg);
+            background-size: cover;
+        }
+
+        fieldset {
+            background: linear-gradient(45deg, lightgreen, rgb(118, 244, 118));
+            width: 400px;
+            height: 700px;
+            font-weight: 500;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        form {
+            margin-left: 500px;
+        }
+
+        button {
+            margin-left: 50px;
+            color: black;
+        }
+
+        table {
+            border: 1px solid black;
+            margin: 2px;
+            text-align: center;
+        }
+
+        div {
+            margin-left: 50px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <h2>Step 1: Your details</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="First and Last name">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Example@gmail.com">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Phone">Phone</label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="+91-0000000000">
+                    </td>
+                </tr>
+            </table>
+            <h2>Step 2: Delivery address</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Address">Address</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="" cols="20" rows="7"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Post code">Post code</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Country">Country</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+            <h2>Step 3: Card details</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Card type">Card type</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="Visa" id="Visa">Visa
+                    </td>
+                    <td>
+                        <input type="radio" name="Aroex" id="Aroex">Aroex
+                    </td>
+                    <td>
+                        <input type="radio" name="Mastercard" id="Mastercard">Mastercard
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Card number">Card number</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Security code">Security code</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Name on card">Name on card</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter name on card">
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <button>
+                    BUY IT!
+                </button>
+            </div>
+        </fieldset>
+    </form>
+    <h1><a href="{% url 'imagetag' %}">click here to go imagetag page</a></h1>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divtag2</title>
+    <style>
+        #outer_box {
+            height: 483px;
+            width: 453px;
+            border: 2px solid black;
+            background-image: url(https://wallpapercave.com/wp/wp2556225.jpg);
+            background-size: cover;
+            margin: auto;
+
+        }
+
+        #first_box {
+            height: 50px;
+            width: 50px;
+            border-top: 2px solid black;
+            border-top: 2px solid green;
+            border-bottom: 2px solid yellow;
+            border-left: 2px solid purple;
+            border-right: 2px solid red;
+            background: linear-gradient(45deg, red, yellow);
+            margin-left: 400px;
+        }
+
+        #second_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 350px;
+            border-top: 2px solid aliceblue;
+            border-bottom: 2px solid magenta;
+            border-left: 2px solid indigo;
+            border-right: 2px solid limegreen;
+            background: linear-gradient(45deg, orange, purple);
+        }
+
+        #third_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 300px;
+            border-top: 2px solid aqua;
+            border-bottom: 2px solid silver;
+            border-left: 2px solid navy;
+            border-right: 2px solid lightblue;
+            background: linear-gradient(45deg, green, pink);
+        }
+
+        #fourth_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 250px;
+            border-top: 2px solid blueviolet;
+            border-bottom: 2px solid grey;
+            border-left: 2px solid lavender;
+            border-right: 2px solid gold;
+            background: linear-gradient(45deg, lime, cyan);
+        }
+
+        #fifth_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 200px;
+            border-top: 2px solid azure;
+            border-bottom: 2px solid pink;
+            border-left: 2px solid cyan;
+            border-right: 2px solid brown;
+            background: linear-gradient(45deg, violet, grey);
+
+        }
+
+        #sixth_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 150px;
+            border-top: 2px solid bisque;
+            border-bottom: 2px solid greenyellow;
+            border-left: 2px solid purple;
+            border-right: 2px solid red;
+            background: linear-gradient(45deg, plum, lavender);
+        }
+
+        #seventh_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 100px;
+            border-top: 2px solid lime;
+            border-bottom: 2px solid navy;
+            border-left: 2px solid magenta;
+            border-right: 2px solid orange;
+            background: linear-gradient(45deg, gold, silver);
+        }
+
+        #eirghth_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin-left: 50px;
+            border-top: 2px solid green;
+            border-bottom: 2px solid yellow;
+            border-left: 2px solid purple;
+            border-right: 2px solid red;
+            background: linear-gradient(45deg, navy, lightblue);
+        }
+
+        #nineghth_box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-top: 2px solid navy;
+            border-bottom: 2px solid violet;
+            border-left: 2px solid cyan;
+            border-right: 2px solid brown;
+            background: linear-gradient(45deg, indigo, magenta);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer_box">
+        <div id="first_box"></div>
+        <div id="second_box"></div>
+        <div id="third_box"></div>
+        <div id="fourth_box"></div>
+        <div id="fifth_box"></div>
+        <div id="sixth_box"></div>
+        <div id="seventh_box"></div>
+        <div id="eirghth_box"></div>
+        <div id="nineghth_box"></div>
+    </div>
+    <h1>
+        <a href="{% url 'divtag3' %}">click here to go divtag3 page</a>
+    </h1>
+
+</body>
+
+</html>

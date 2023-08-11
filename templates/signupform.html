@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form2</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 100px, 0, 0, 400px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/06/04/31/indian-flag-1079098__340.jpg);
+            background-size: cover;
+        }
+
+        fieldset {
+            width: fit-content;
+            border-radius: 30px;
+            background: linear-gradient(45deg, red, yellow);
+            font-style: italic;
+            color: ghostwhite;
+            border-color: blue;
+            margin-left: 200px;
+            margin-top: 150px;
+
+        }
+
+        legend {
+            font-weight: bolder;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            border-radius: 30px;
+            text-align: center;
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="animate__swing">
+        <fieldset>
+            <legend>sign-up</legend>
+            <input type="text" placeholder="first name"><br>
+            <input type="text" placeholder="last name"><br>
+            <input type="number" placeholder="+91-0000000000"><br>
+            <input type="email" placeholder="abc@gmail.com"><br>
+            <input type="datetime" placeholder="DOB dd/mm/yyyy"><br>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others <br>
+            <input type="password" placeholder="strong password"><br>
+            <input type="password" placeholder="confirm password"><br>
+            <label>Country</label>
+            <select>
+                <option value="">---select---</option>
+                <option value="">india</option>
+                <option value="">pakistan</option>
+                <option value="">bangladesh</option>
+                <option value="">srilanka</option>
+            </select><br>
+            <input type="submit" value="submit">
+        </fieldset>
+        <h1><a href="{% url 'table1' %}">click here to go back to again table1 HTML page</a></h1>
+    </form>
+
+
+</body>
+
+</html>

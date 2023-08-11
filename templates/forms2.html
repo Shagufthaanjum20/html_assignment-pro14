@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms2</title>
+    <style>
+        fieldset {
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>
+            <form>
+                <fieldset>
+                    <legend>form</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">name</label></td>
+                            <td><input type="text" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">password</label></td>
+                            <td><input type="password" id="password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">gender</label></td>
+                            <td>
+                                <select name="" id="gender">
+                                    <option value="">---select---</option>
+                                    <option value="">male</option>
+                                    <option value="">Female</option>
+                                    <option value="">others</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="" id="login"></td>
+                            <td><input type="reset" name="" id="reset"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+
+        </h2>
+        <h1><a href="{% url 'forms3' %}">click here to go forms3 page</a></h1>
+    </center>
+</body>
+
+</html>

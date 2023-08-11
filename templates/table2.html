@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2</title>
+</head>
+
+<body>
+    <center>
+        <h1>
+            <table border="1">
+                <tr>
+                    <th>CSS Property</th>
+                    <th>Internet Explorer</th>
+                    <th>Fire Fox</th>
+                    <th>Chrome</th>
+                    <th>Safari</th>
+                    <th>Opera</th>
+                </tr>
+
+                <tr>
+                    <th>Boarder Radius
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Box Shadow
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>CSS Animations
+                    <td>NO</td>
+                    <td>NO</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>NO</td>
+                    </th>
+                </tr>
+            </table>
+            
+            <a href="{% url 'table3' %}">click here to go table3 page</a>
+        </h1>
+    </center>
+
+</body>
+
+</html>
